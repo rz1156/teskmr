@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamera Web Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="glass-panel">
+        <h2><i class="fas fa-camera"></i> Live Camera</h2>
+        
+        <div class="video-wrapper">
+            <video id="videoElement" autoplay playsinline></video>
+        </div>
+
+        <div class="controls">
+            <button id="snapBtn" class="btn"><i class="fas fa-camera-retro"></i> Ambil Foto</button>
+        </div>
+
+        <canvas id="canvas" style="display: none;"></canvas>
+        
+        <div id="resultArea" class="hidden">
+            <h3>Hasil Jepretan:</h3>
+            <img id="photoResult" alt="Hasil foto akan muncul di sini">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
